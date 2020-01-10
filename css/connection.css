@@ -1,4 +1,3 @@
-@charset "UTF-8";
 header .navbar1 {
   width: 100%;
   height: 100px;
@@ -143,6 +142,7 @@ header .navbar1 .container-1 .menu1::after {
 }
 
 header .navbar1 .container-1 .menu1 li {
+  font-size: 18px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -544,11 +544,59 @@ footer .txt .inf p .icon {
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-family: "微軟正黑體";
+html {
+  scroll-behavior: smooth;
+}
+
+.fixed_icon {
+  display: none;
+  position: fixed;
+  right: 25px;
+  bottom: 100px;
+}
+
+.fixed_icon .top {
+  margin-top: 15px;
+  border-radius: 50%;
+}
+
+.fixed_icon .top img {
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+@media (max-width: 576px) {
+  .fixed_icon .top img {
+    width: 75%;
+  }
+}
+
+.fixed_icon .top #img1 {
+  display: none;
+}
+
+.fixed_icon .top #img1.active {
+  display: block;
+}
+
+.fixed_icon .top #img2 {
+  border: 2px solid #df971f;
+  display: none;
+}
+
+.fixed_icon .top #img2.active {
+  display: block;
+}
+
+.fixed_icon .shop_car img {
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+@media (max-width: 576px) {
+  .fixed_icon .shop_car img {
+    width: 75%;
+  }
 }
 
 body {
@@ -576,10 +624,37 @@ body {
 }
 
 .connection .container .title .liaison {
-  font-size: 36px;
   margin-bottom: 100px;
-  color: #f0a312;
   position: relative;
+  font-size: 36px;
+  font-weight: bolder;
+  color: #e89b12;
+}
+
+.connection .container .title .liaison img {
+  position: relative;
+  top: -10px;
+}
+
+.connection .container .title .liaison img:nth-child(1) {
+  margin-right: 25px;
+}
+
+.connection .container .title .liaison img:nth-child(2) {
+  margin-left: 25px;
+}
+
+.connection .container .title .liaison img {
+  top: 0;
+}
+
+@media (max-width: 576px) {
+  .connection .container .title .liaison img:nth-child(1) {
+    margin-right: 15px;
+  }
+  .connection .container .title .liaison img:nth-child(2) {
+    margin-left: 15px;
+  }
 }
 
 .connection .container .title .phone {

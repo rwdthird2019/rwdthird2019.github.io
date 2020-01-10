@@ -5,26 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>蜜鄉養蜂園</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="./css/public.css">
     <link rel="stylesheet" href="./css/style.css">
-
     <style>
-        .menu_block {
-            display: flex;
-            height: 100%;
-            align-items: center;
+        #menu_line {
+            position: absolute;
+            width: 100px;
+            height: 3px;
+            border-radius: 5px;
+            background-color: #E89B12;
+            top: 95px;
+            left: 405px;
+            transition-duration: .3s;
         }
     </style>
-
 </head>
 
 <body>
     <header>
         <nav class="navbar1">
             <div class="container-1">
+                <span id="menu_line"></span>
                 <div class="menu_block">
                     <div class="menu_ctrl" id="nav-icon2">
                         <svg class="ham ham6" viewBox="0 0 100 100" width="60"
@@ -42,21 +47,22 @@
                         <img src="./img/navbar_logo_2.png" alt="">
                     </div>
                 </div>
-                <ul class="menu1">
-                    <li>養蜂園簡介</li>
-                    <li>養蜂實景</li>
-                    <li>蜂產品系列</li>
+                <ul class="menu1" id="menu1">
+                    <li onclick="document.location.href='introduction.html'">養蜂園簡介</li>
+                    <li onclick="document.location.href='scene.html'">養蜂實景</li>
+                    <li onclick="document.location.href='series.html'">蜂產品系列</li>
                     <li onclick="document.location.href='index.html'"><img src="./img/navbar_logo_2.png" alt=""></li>
-                    <li>蜂產品小教室</li>
+                    <li onclick="document.location.href='classes.html'">蜂產品小教室</li>
                     <li onclick="document.location.href='buy.html'">商品購買</li>
                     <li onclick="document.location.href='connection.html'">聯絡我們</li>
                 </ul>
                 <ul class="menu5" id="menu5">
-                    <li onclick="document.location.href='index.html'"><img src="./img/menu_home_icon.png" alt="">首頁</li>
-                    <li>養蜂園簡介</li>
-                    <li>養蜂實景</li>
-                    <li>蜂產品系列</li>
-                    <li>蜂產品小教室</li>
+                    <li onclick="document.location.href='index.html'"><img src="./img/public/menu_home_icon.png"
+                            alt="">首頁</li>
+                    <li onclick="document.location.href='introduction.html'">養蜂園簡介</li>
+                    <li onclick="document.location.href='scene.html'">養蜂實景</li>
+                    <li onclick="document.location.href='series.html'">蜂產品系列</li>
+                    <li onclick="document.location.href='classes.html'">蜂產品小教室</li>
                     <li id="first_li" onclick="document.location.href='buy.html'">商品購買
                         <ul class="second_ul" id="second_ul">
                             <li class="second_li" id="second_li1">天然蜂蜜
@@ -66,7 +72,6 @@
                                     <li>蜂蜜抹醬</li>
                                 </ul>
                             </li>
-
                             <li class="second_li" id="second_li2">
                                 蜂王乳
                                 <ul class="third_ul" id="third_ul2">
@@ -81,7 +86,6 @@
                                     <li>女王蜂子</li>
                                 </ul>
                             </li>
-
                             <li class="second_li" id="second_li4">
                                 花粉
                                 <ul class="third_ul" id="third_ul4">
@@ -89,11 +93,9 @@
                                     <li>破壁蜂花粉</li>
                                 </ul>
                             </li>
-
                             <li class="second_li" id="second_li5">
                                 蜂膠
                             </li>
-
                             <li class="second_li" id="second_li6">
                                 蜂蜜禮盒
                                 <ul class="third_ul" id="third_ul6">
@@ -128,6 +130,9 @@
             </div>
         </div>
     </header>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+
     <main>
         <div class="content">
             <div class="news">
@@ -234,22 +239,22 @@
     </main>
     <footer>
         <div class="pic">
-            <img src="./img/footer.png" alt="">
-            <img src="./img/footer_576px.png" alt="">
+            <img src="./img/public/footer.png" alt="">
+            <img src="./img/public/footer_576px.png" alt="">
 
         </div>
         <div class="txt">
             <div class="logo">
-                <img src="./img/navbar_logo_2.png" alt="">
+                <img src="./img/public/navbar_logo_2.png" alt="">
 
             </div>
             <div class="inf">
                 <p>
-                    <span> <img src="./img/phone-icon.png" alt="" class="phone_icon">0937-782555</span>
+                    <span> <img src="./img/public/phone-icon.png" alt="" class="phone_icon">0937-782555</span>
                     <span>張先生</span>
                     <span class="icon">
-                        <img src="./img/fb-icon.png" alt="">
-                        <img src="./img/ig-icon.png" alt="">
+                        <img src="./img/public/fb-icon.png" alt="">
+                        <img src="./img/public/ig-icon.png" alt="">
                     </span>
 
                 </p>
@@ -262,15 +267,17 @@
     </footer>
 
     <div class="fixed_icon" id="fixed_icon">
-        <div class="shop_car"><img src="./img/icon_shop_car_v2.png" alt=""></div>
+        <div class="shop_car"><img src="./img/public/icon_shop_car_v2.png" alt=""></div>
         <div class="top active" id="gototop">
-            <img src="./img/icon_top_orange.png" alt="" class=" active" id="img1">
-            <img src="./img/icon_top_white.png" alt="" class="" id="img2">
+            <img src="./img/public/icon_top_orange.png" alt="" class=" active" id="img1">
+            <img src="./img/public/icon_top_white.png" alt="" class="" id="img2">
         </div>
     </div>
 
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./jquery/navbar_menu.js"></script>
+    <script src="./jquery/public.js"></script>
 
     <script>
         var swiper = new Swiper('.swiper-container', {
@@ -289,50 +296,8 @@
 
     </script>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="./jquery/navbar_menu.js"></script>
-    <script>
-        $(function () {
-            $(window).scroll(function () {
-                if ($(window).scrollTop() > 100) {
-                    $("#fixed_icon").css('display', 'block')
-                } else if ($(window).scrollTop() < 100) {
-                    $("#fixed_icon").css('display', 'none')
-                }
-            });
 
 
-        });
-
-        $("#gototop").mousedown(function () {
-
-            $("#img1").removeClass('active')
-            $("#img2").addClass('active')
-
-        });
-
-        $("#gototop").on({
-            'touchstart': function () {
-                $("#img1").removeClass('active')
-                $("#img2").addClass('active')
-            }
-        });
-
-        $("#gototop").mouseup(function () {
-            $("#img1").addClass('active')
-            $("#img2").removeClass('active')
-            $(window).scrollTop('0')
-        });
-
-
-        $("#gototop").on({
-            'touchend': function () {
-                $("#img1").addClass('active')
-                $("#img2").removeClass('active')
-                $(window).scrollTop('0')
-            }
-        });
-    </script>
 </body>
 
 </html>

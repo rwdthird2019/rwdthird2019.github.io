@@ -1,6 +1,8 @@
 @import "./_header";
 @import "./footer";
 @import "./nav_bar";
+@import "./mixin";
+@import "./fixed_icon";
 
 * {
   margin: 0;
@@ -8,9 +10,10 @@
   list-style: none;
   box-sizing: border-box;
 }
-
-.news {
+body {
   background: linear-gradient(to top, rgba(247, 246, 231, 0.24), rgba(199, 243, 249, 0.24));
+}
+.news {
   width: 100%;
   padding-top: 100px;
   .container-1 {
@@ -20,12 +23,16 @@
     text-align: center;
 
     .title {
-      margin-bottom: 30px;
       text-align: center;
-      font-size: 36px;
       margin-bottom: 100px;
-      color: #f0a312;
-      position: relative;
+
+      @include title-pc();
+      img {
+        top: 0;
+      }
+      @media (max-width: 576px) {
+        @include title-mobile();
+      }
     }
     .item_group {
       display: flex;

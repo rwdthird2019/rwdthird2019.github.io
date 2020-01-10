@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/scene.css">
+    <link rel="stylesheet" href="./css/public.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar1">
             <div class="container-1">
+                <span id="menu_line"></span>
                 <div class="menu_block">
                     <div class="menu_ctrl" id="nav-icon2">
                         <svg class="ham ham6" viewBox="0 0 100 100" width="60"
@@ -33,21 +35,21 @@
                     </div>
                 </div>
                 <ul class="menu1">
-                    <li>養蜂園簡介</li>
-                    <li>養蜂實景</li>
-                    <li>蜂產品系列</li>
+                    <li onclick="document.location.href='introduction.html'">養蜂園簡介</li>
+                    <li onclick="document.location.href='scene.html'">養蜂實景</li>
+                    <li onclick="document.location.href='series.html'">蜂產品系列</li>
                     <li onclick="document.location.href='index.html'"><img src="./img/navbar_logo_2.png" alt=""></li>
-                    <li>蜂產品小教室</li>
+                    <li onclick="document.location.href='classes.html'">蜂產品小教室</li>
                     <li onclick="document.location.href='buy.html'">商品購買</li>
                     <li onclick="document.location.href='connection.html'">聯絡我們</li>
                 </ul>
                 <ul class="menu5" id="menu5">
-                    <li onclick="document.location.href='index.html'"><img src="./img/menu_home_icon.png" alt="">首頁</li>
-                    <li>養蜂園簡介</li>
-                    <li>養蜂實景</li>
-                    <li>蜂產品系列</li>
-                    <li>蜂產品小教室</li>
-                    <li id="first_li">商品購買
+                    <li onclick="document.location.href='index.html'"><img src="./img/public/menu_home_icon.png" alt="">首頁</li>
+                    <li onclick="document.location.href='introduction.html'">養蜂園簡介</li>
+                    <li onclick="document.location.href='scene.html'">養蜂實景</li>
+                    <li onclick="document.location.href='series.html'">蜂產品系列</li>
+                    <li onclick="document.location.href='classes.html'">蜂產品小教室</li>
+                    <li id="first_li" onclick="document.location.href='buy.html'">商品購買
                         <ul class="second_ul" id="second_ul">
                             <li class="second_li" id="second_li1">天然蜂蜜
                                 <ul class="third_ul" id="third_ul1">
@@ -101,10 +103,10 @@
     <main>
         <div class="content">
             <div class="container">
-                <div class="title" style="font-size: 36px; font-weight: bolder; color: #E89B12;">
-                    <img class="left" src="./img/left.png" alt="" style="margin-right: 25px;">
+                <div class="title">
+                    <img class="left" src="./img/left.png" alt="">
                     養蜂實景
-                    <img class="right" src="./img/right.png" alt="" style="margin-left: 25px;">
+                    <img class="right" src="./img/right.png" alt="">
                 </div>
                 <div class="scene-group">
                     <div class="scene_item">
@@ -134,9 +136,9 @@
 
                 </div>
 
-               
+
             </div>
-            <div class="scene-video" >
+            <div class="scene-video">
                 <div class="video">
                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/CbHpaCauRdg" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -152,22 +154,22 @@
     </main>
     <footer>
         <div class="pic">
-            <img src="./img/footer.png" alt="">
-            <img src="./img/footer_576px.png" alt="">
+            <img src="./img/public/footer.png" alt="">
+            <img src="./img/public/footer_576px.png" alt="">
 
         </div>
         <div class="txt">
             <div class="logo">
-                <img src="./img/navbar_logo_2.png" alt="">
+                <img src="./img/public/navbar_logo_2.png" alt="">
 
             </div>
             <div class="inf">
                 <p>
-                    <span> <img src="./img/phone-icon.png" alt="" class="phone_icon">0937-782555</span>
+                    <span> <img src="./img/public/phone-icon.png" alt="" class="phone_icon">0937-782555</span>
                     <span>張先生</span>
                     <span class="icon">
-                        <img src="./img/fb-icon.png" alt="">
-                        <img src="./img/ig-icon.png" alt="">
+                        <img src="./img/public/fb-icon.png" alt="">
+                        <img src="./img/public/ig-icon.png" alt="">
                     </span>
 
                 </p>
@@ -179,18 +181,20 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <div class="fixed_icon" id="fixed_icon">
+        <div class="shop_car"><img src="./img/public/icon_shop_car_v2.png" alt=""></div>
+        <div class="top active" id="gototop">
+            <img src="./img/public/icon_top_orange.png" alt="" class=" active" id="img1">
+            <img src="./img/public/icon_top_white.png" alt="" class="" id="img2">
+        </div>
+    </div>
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./jquery/navbar_menu.js"></script>
+    <script src="./jquery/public.js"></script>
     <script>
         $(function () {
             $(window).scroll(function () {

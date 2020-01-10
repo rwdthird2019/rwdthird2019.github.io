@@ -1,24 +1,47 @@
-// @mixin title() {
-//     padding-top: 100px;
-//     padding-bottom: 50px;
-// }
+@import "./font-size";
+
+@mixin title() {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
 
 @mixin margin-auto {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 @mixin text-center {
-    text-align: center;
+  text-align: center;
 }
 
-@mixin title-style(){
-    
+@mixin title-pc() {
+  position: relative;
+  font-size: $fontsize-first-title;
+  font-weight: bolder;
+  color: #e89b12;
+  img {
+    position: relative;
+    top: -10px;
+  }
+  img:nth-child(1) {
+    margin-right: 25px;
+  }
+  img:nth-child(2) {
+    margin-left: 25px;
+  }
+}
+@mixin title-mobile() {
+  img:nth-child(1) {
+    margin-right: 15px;
+  }
+  img:nth-child(2) {
+    margin-left: 15px;
+  }
 }
 
-@mixin title-to-top-100px{
-    padding-top: 100px;
+@mixin title-to-top-100px {
+  padding-top: 100px;
 }
 
-@mixin title-to-top-60px{
-    padding-top: 60px;
+@mixin title-to-top-60px {
+  padding-top: 60px;
 }

@@ -1,11 +1,8 @@
 @import "./nav_bar";
 @import "./footer";
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-family: "微軟正黑體";
-}
+@import "./mixin";
+@import "./fixed_icon";
+
 body {
   background: linear-gradient(to top, rgba(247, 246, 231, 0.24), rgba(199, 243, 249, 0.24));
 }
@@ -23,10 +20,14 @@ body {
       text-align: center;
 
       .liaison {
-        font-size: 36px;
         margin-bottom: 100px;
-        color: #f0a312;
-        position: relative;
+        @include title-pc();
+        img{
+          top: 0;
+        }
+        @media (max-width:576px) {
+          @include title-mobile();
+        }
       }
       .phone {
         font-size: 24px;
@@ -79,7 +80,6 @@ body {
           input,
           select,
           textarea {
-
             margin-left: 65px;
             border: 2px solid #e79f1f;
             background-color: #f4f4f4;
@@ -119,7 +119,7 @@ body {
               display: block;
             }
           }
-          .connection_txt{
+          .connection_txt {
             float: left;
             @media (max-width: 456px) {
               float: unset;

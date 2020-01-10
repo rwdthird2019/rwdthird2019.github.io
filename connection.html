@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>聯絡我們</title>
     <link rel="stylesheet" href="./css/connection.css">
+    <link rel="stylesheet" href="./css/public.css">
 
 </head>
 
@@ -14,6 +15,7 @@
     <header>
         <nav class="navbar1">
             <div class="container-1">
+                <span id="menu_line"></span>
                 <div class="menu_block">
                     <div class="menu_ctrl" id="nav-icon2">
                         <svg class="ham ham6" viewBox="0 0 100 100" width="60"
@@ -32,20 +34,21 @@
                     </div>
                 </div>
                 <ul class="menu1">
-                    <li>養蜂園簡介</li>
-                    <li>養蜂實景</li>
-                    <li>蜂產品系列</li>
+                    <li onclick="document.location.href='introduction.html'">養蜂園簡介</li>
+                    <li onclick="document.location.href='scene.html'">養蜂實景</li>
+                    <li onclick="document.location.href='series.html'">蜂產品系列</li>
                     <li onclick="document.location.href='index.html'"><img src="./img/navbar_logo_2.png" alt=""></li>
-                    <li>蜂產品小教室</li>
+                    <li onclick="document.location.href='classes.html'">蜂產品小教室</li>
                     <li onclick="document.location.href='buy.html'">商品購買</li>
-                    <li onclick="document.location.href='connection.html'"> 聯絡我們</lionclick="document.location.href='connection.html'">
+                    <li onclick="document.location.href='connection.html'">聯絡我們</li>
                 </ul>
                 <ul class="menu5" id="menu5">
-                    <li onclick="document.location.href='index.html'"><img src="./img/menu_home_icon.png" alt="">首頁</li>
-                    <li>養蜂園簡介</li>
-                    <li>養蜂實景</li>
-                    <li>蜂產品系列</li>
-                    <li>蜂產品小教室</li>
+                    <li onclick="document.location.href='index.html'"><img src="./img/public/menu_home_icon.png"
+                            alt="">首頁</li>
+                    <li onclick="document.location.href='introduction.html'">養蜂園簡介</li>
+                    <li onclick="document.location.href='scene.html'">養蜂實景</li>
+                    <li onclick="document.location.href='series.html'">蜂產品系列</li>
+                    <li onclick="document.location.href='classes.html'">蜂產品小教室</li>
                     <li id="first_li" onclick="document.location.href='buy.html'">商品購買
                         <ul class="second_ul" id="second_ul">
                             <li class="second_li" id="second_li1">天然蜂蜜
@@ -102,12 +105,12 @@
             <div class="container">
                 <div class="title">
                     <div class="liaison col-2">
-                        <img src="./img/left.png" alt="" style="margin-right: 25px;">
+                        <img src="./img/left.png" alt="">
                         聯絡我們
-                        <img src="./img/right.png" alt="" style="margin-left: 25px;">
+                        <img src="./img/right.png" alt="">
                     </div>
                     <div class="phone">
-                        <img src="./img/phone-icon-b.png" alt="">
+                        <img src="./img/public/phone-icon-b.png" alt="">
                         <span>0937-782555</span>
                         <span class="name">張先生</span>
                     </div>
@@ -153,39 +156,53 @@
                 </div>
 
             </div>
-
-            <img src="./img/bg_img.png" alt="" style="width: 100%; margin-top: 100px;">
         </div>
     </main>
     <footer>
         <div class="pic">
-            <img src="./img/footer.png" alt="">
+            <img src="./img/public/footer.png" alt="">
+            <img src="./img/public/footer_576px.png" alt="">
+
         </div>
         <div class="txt">
             <div class="logo">
-                <img src="./img/navbar_logo_2.png" alt="">
+                <img src="./img/public/navbar_logo_2.png" alt="">
+
             </div>
             <div class="inf">
                 <p>
-                    <span> <img src="./img/phone-icon.png" alt="" class="phone_icon">0937-782555</span>
+                    <span> <img src="./img/public/phone-icon.png" alt="" class="phone_icon">0937-782555</span>
                     <span>張先生</span>
                     <span class="icon">
-                        <img src="./img/fb-icon.png" alt="">
-                        <img src="./img/ig-icon.png" alt="">
+                        <img src="./img/public/fb-icon.png" alt="">
+                        <img src="./img/public/ig-icon.png" alt="">
                     </span>
 
                 </p>
                 <p><span>彰化縣員林市中正路138-1號</span></p>
-                <p><span>苗栗縣公館鄉褔基村132-8號 (苗栗蜂場)</span></p>
-                <p><span>桃園市大園區中山南路一段425號 (桃園蜂場)</span></p>
-                <p><span>蜂場依季節逐花遷徙採收，現場取貨請先電話聯繫預約</span></p>
+                <p><span>苗栗縣公館鄉褔基村132-8號 <span>(苗栗蜂場)</span></span></p>
+                <p><span>桃園市大園區中山南路一段425號 <span>(桃園蜂場)</span></span></p>
+                <p><span>蜂場依季節逐花遷徙採收，<span>現場取貨請先電話聯繫預約</span></span></p>
             </div>
         </div>
-
     </footer>
 
+    <div class="fixed_icon" id="fixed_icon">
+        <div class="shop_car"><img src="./img/public/icon_shop_car_v2.png" alt=""></div>
+        <div class="top active" id="gototop">
+            <img src="./img/public/icon_top_orange.png" alt="" class=" active" id="img1">
+            <img src="./img/public/icon_top_white.png" alt="" class="" id="img2">
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./jquery/navbar_menu.js"></script>
+    <script src="./jquery/public.js"></script>
+
+
+
 </body>
 
 </html>

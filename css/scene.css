@@ -142,6 +142,7 @@ header .navbar1 .container-1 .menu1::after {
 }
 
 header .navbar1 .container-1 .menu1 li {
+  font-size: 18px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -543,10 +544,74 @@ footer .txt .inf p .icon {
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+html {
+  scroll-behavior: smooth;
+}
+
+.fixed_icon {
+  display: none;
+  position: fixed;
+  right: 25px;
+  bottom: 100px;
+}
+
+.fixed_icon .top {
+  margin-top: 15px;
+  border-radius: 50%;
+}
+
+.fixed_icon .top img {
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+@media (max-width: 576px) {
+  .fixed_icon .top img {
+    width: 75%;
+  }
+}
+
+.fixed_icon .top #img1 {
+  display: none;
+}
+
+.fixed_icon .top #img1.active {
+  display: block;
+}
+
+.fixed_icon .top #img2 {
+  border: 2px solid #df971f;
+  display: none;
+}
+
+.fixed_icon .top #img2.active {
+  display: block;
+}
+
+.fixed_icon .shop_car img {
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+@media (max-width: 576px) {
+  .fixed_icon .shop_car img {
+    width: 75%;
+  }
+}
+
+body {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(247, 246, 231, 0.24)), to(rgba(199, 243, 249, 0.24)));
+  background: linear-gradient(to top, rgba(247, 246, 231, 0.24), rgba(199, 243, 249, 0.24));
+}
+
+main .content {
+  padding-top: 100px;
+}
+
+@media (max-width: 576px) {
+  main .content {
+    padding-top: 60px;
+  }
 }
 
 main .content .container {
@@ -555,6 +620,36 @@ main .content .container {
 
 main .content .container .title {
   text-align: center;
+  margin-bottom: 100px;
+  position: relative;
+  font-size: 36px;
+  font-weight: bolder;
+  color: #e89b12;
+}
+
+main .content .container .title img {
+  position: relative;
+  top: -10px;
+}
+
+main .content .container .title img:nth-child(1) {
+  margin-right: 25px;
+}
+
+main .content .container .title img:nth-child(2) {
+  margin-left: 25px;
+}
+
+@media (max-width: 576px) {
+  main .content .container .title {
+    margin-bottom: 25px;
+  }
+  main .content .container .title img:nth-child(1) {
+    margin-right: 15px;
+  }
+  main .content .container .title img:nth-child(2) {
+    margin-left: 15px;
+  }
 }
 
 main .content .container .scene-group .scene_item {

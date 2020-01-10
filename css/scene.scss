@@ -1,19 +1,29 @@
 @import "./nav_bar";
 @import "./footer";
-
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+@import "./mixin";
+@import "./fixed_icon";
+body {
+  background: linear-gradient(to top, rgba(247, 246, 231, 0.24), rgba(199, 243, 249, 0.24));
 }
+
 main {
   .content {
+    @include title-to-top-100px;
+
+    @media (max-width: 576px) {
+      @include title-to-top-60px;
+    }
     .container {
       margin: 0 auto;
       .title {
         text-align: center;
+        margin-bottom: 100px;
+        @include title-pc();
+        @media (max-width: 576px) {
+          margin-bottom: 25px;
+          @include title-mobile();
+        }
       }
-      // text-align: center;
       .scene-group {
         .scene_item {
           position: relative;

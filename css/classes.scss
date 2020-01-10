@@ -1,0 +1,126 @@
+@import "./mixin";
+@import "./footer";
+@import "./news";
+@import "./font-size";
+@import "./nav_bar";
+@import "./fixed_icon";
+* {
+  margin: 0;
+  padding: 0;
+}
+main {
+  .content {
+    max-width: 1920px;
+    @include margin-auto();
+    @include title-to-top-100px;
+    @media (max-width: 576px) {
+      @include title-to-top-60px;
+    }
+    .container {
+      .classes-contianer {
+        @media (max-width: 576px) {
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+      }
+
+      .classes-title {
+        padding-bottom: 100px;
+        text-align: center;
+
+        @include title-pc();
+
+        @media (max-width: 576px) {
+          padding-bottom: 60px;
+          @include title-mobile();
+        }
+
+        .left {
+          margin-right: 25px;
+
+          @media (max-width: 576px) {
+            margin: unset;
+          }
+        }
+
+        .right {
+          margin-left: 25px;
+
+          @media (max-width: 576px) {
+            margin: unset;
+          }
+        }
+      }
+
+      .classes-title-First {
+        display: flex;
+        align-items: center;
+        padding-bottom: 50px;
+        font-size: 36px;
+
+        @media (max-width: 576px) {
+          padding-bottom: 25px;
+        }
+      }
+
+      .classes-title-Second {
+        display: flex;
+        align-items: center;
+        padding-bottom: 50px;
+        padding-top: 100px;
+        font-size: 36px;
+
+        @media (max-width: 576px) {
+          padding-top: 50px;
+          padding-bottom: 25px;
+        }
+      }
+
+      .accordion {
+        border: 1px solid #f0a321;
+        border-radius: 6px;
+
+        .card-header {
+          background-color: #ffffff;
+
+          .btn:not(:disabled):not(.disabled) {
+            width: 100%;
+            text-align: unset;
+            font-size: 21px;
+          }
+        }
+
+        .card-body {
+          font-size: 18px;
+        }
+
+        .card-header.active {
+          background: linear-gradient(180deg, #f9ece4, #f0a321 36%);
+        }
+
+        .classes-top {
+          border-top: 1px solid #f0a321;
+        }
+
+        .card-body {
+          border-left: 9px solid #f0a321;
+        }
+      }
+
+      .classes-more {
+        font-size: 24px;
+        text-align: right;
+        padding-top: 50px;
+
+        @media (max-width: 576px) {
+          padding-top: 30px;
+          padding-bottom: 95px;
+        }
+
+        a {
+          color: black;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/classes.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <title>蜂產品小教室</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar1">
+            <div class="container-1">
+                <span id="menu_line"></span>
+                <div class="menu_block">
+                    <div class="menu_ctrl" id="nav-icon2">
+                        <svg class="ham ham6" viewBox="0 0 100 100" width="60"
+                            onclick="this.classList.toggle('active')">
+                            <path class="line top"
+                                d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272" />
+                            <path class="line middle"
+                                d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272" />
+                            <path class="line bottom"
+                                d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272" />
+                        </svg>
+                    </div>
+
+                    <div class="logo" onclick="document.location.href='index.html'">
+                        <img src="./img/navbar_logo_2.png" alt="">
+                    </div>
+                </div>
+                <ul class="menu1">
+                    <li onclick="document.location.href='introduction.html'">養蜂園簡介</li>
+                    <li onclick="document.location.href='scene.html'">養蜂實景</li>
+                    <li onclick="document.location.href='series.html'">蜂產品系列</li>
+                    <li onclick="document.location.href='index.html'"><img src="./img/navbar_logo_2.png" alt=""></li>
+                    <li onclick="document.location.href='classes.html'">蜂產品小教室</li>
+                    <li onclick="document.location.href='buy.html'">商品購買</li>
+                    <li onclick="document.location.href='connection.html'">聯絡我們</li>
+                </ul>
+                <ul class="menu5" id="menu5">
+                    <li onclick="document.location.href='index.html'"><img src="./img/public/menu_home_icon.png" alt="">首頁</li>
+                    <li onclick="document.location.href='introduction.html'">養蜂園簡介</li>
+                    <li onclick="document.location.href='scene.html'">養蜂實景</li>
+                    <li onclick="document.location.href='series.html'">蜂產品系列</li>
+                    <li onclick="document.location.href='classes.html'">蜂產品小教室</li>
+                    <li id="first_li" onclick="document.location.href='buy.html'">商品購買
+                        <ul class="second_ul" id="second_ul">
+                            <li class="second_li" id="second_li1">天然蜂蜜
+                                <ul class="third_ul" id="third_ul1">
+                                    <li>龍眼蜂蜜</li>
+                                    <li>特產蜂蜜</li>
+                                    <li>蜂蜜抹醬</li>
+                                </ul>
+                            </li>
+                            <li class="second_li" id="second_li2">
+                                蜂王乳
+                                <ul class="third_ul" id="third_ul2">
+                                    <li>外銷蜂王乳</li>
+                                    <li>蜂王乳膠囊</li>
+                                </ul>
+                            </li>
+                            <li class="second_li" id="second_li3">
+                                蜂子
+                                <ul class="third_ul" id="third_ul3">
+                                    <li>雄蜂子</li>
+                                    <li>女王蜂子</li>
+                                </ul>
+                            </li>
+                            <li class="second_li" id="second_li4">
+                                花粉
+                                <ul class="third_ul" id="third_ul4">
+                                    <li>原體蜂花粉</li>
+                                    <li>破壁蜂花粉</li>
+                                </ul>
+                            </li>
+                            <li class="second_li" id="second_li5">
+                                蜂膠
+                            </li>
+                            <li class="second_li" id="second_li6">
+                                蜂蜜禮盒
+                                <ul class="third_ul" id="third_ul6">
+                                    <li>純釀蜂蜜醋</li>
+                                    <li>甜蜜伴手禮</li>
+                                </ul>
+                            </li>
+                            <li class="second_li" id="second_li7">
+                                團購單填寫
+                            </li>
+                        </ul>
+                    </li>
+                    <li onclick="document.location.href='connection.html'">聯絡我們</li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <div class="container">
+                <div class="classes-contianer">
+                    <div class="classes-title">
+                        <img class="left" src="./img/left.png" alt="">
+                        蜂產品小教室
+                        <img class="right" src="./img/right.png" alt="">
+                    </div>
+                    <div class="classes-title-First">
+                        <img src="./img/classes/icon_list.png" alt="">
+                        認識蜂王乳
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header active " id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn " type="button" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        Ｑ：蜂王乳如何使用較有效果？
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    食用方式以舌下吸收方式最佳，即將王乳置於舌下或含在口中 5-10 分鐘，待完全溶化後和口中分泌的唾液緩緩一起吞下。由於王乳有酸澀辛辣刺激味 ,
+                                    如口味不能接受時，可調一杯蜂蜜汁 ( 約 250 ～ 300 ml) ，加入 3-5 公克蜂王漿 ( 約一湯匙 )
+                                    ，混合拌勻後喝下，對消除疲勞，養顏美容等有幫助，也可先調配好放入冰箱保存，每天或隨時取用，一次調配量以一週內可用完為原則。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="classes-top card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Ｑ：蜂王漿對人體的功效？
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    1. 消除疲勞，增強體力<br>
+                                    3. 養顏美容，青春永駐<br>
+                                    4. 營養補給、精神旺盛、健康維持<br>
+                                    5. 調整體質
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="classes-top card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Ｑ：蜂王漿美容採用法：
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    每日就寢及化粧前，先把面部洗淨，取蜂王漿少許加點蜂蜜與水混合均勻敷在臉上充分滋潤後（約 20～30分鐘）用清水洗去，塗抹與食用更具相乘的效果。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="classes-top card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button class="btn " type="button" data-toggle="collapse"
+                                        data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                        Ｑ：蜂王漿一天的用量大約是多少？
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    蜂王漿並不是藥劑，依 " 行政院農改場 " 研究最好在早晨空腹和晚上臨睡前食用
+                                    每次 3-5公克
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="classes-top card-header" id="headingFive">
+                                <h2 class="mb-0">
+                                    <button class="btn collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Ｑ： 一天什麼時間吃蜂王漿最有效？
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    蜂王漿是最富營養的天然食物，最好在 早晨空腹和晚上臨睡前食用 ，
+                                    吃飽後胃內有大量食物待消化，蜂王漿較不易給人體吸收，形成浪費。最好在早晚空腹時食用。此時容易吸收，效果也最好
+                                    。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="classes-top card-header" id="headingSix">
+                                <h2 class="mb-0">
+                                    <button class="btn collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        Ｑ：蜂王漿能不能使用金屬製的匙子 (用具)食用？
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    食用蜂王漿建議使用木製或塑膠製的匙子,若使用一般金屬製湯匙,勿久置放於蜂王乳中,避免久置後產生化學變化 。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="classes-top card-header" id="headingSeven">
+                                <h2 class="mb-0">
+                                    <button class="btn collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseSeven" aria-expanded="false"
+                                        aria-controls="collapseSeven">
+                                        Ｑ：何謂舌下吸收式？
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    簡單地說將蜂王漿含在舌下，直接由血液吸收。這種方法 不經由胃吸收，不會破壞胃酸
+                                    ，由肝臟進行分解，因此不會變質。也就是說，蜂王漿的全部成分全由血液吸收。這種方法，近年來受到專家、學者的重視。蘇聯長壽村的長壽者則將蜂王漿含在口中，過了一會兒，再吞下去。這種方法和「舌下吸收式」的原理相同,利用舌下吸收式，比吃進胃裏，應該有更強的自覺反應才對。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="classes-top card-header" id="headingEight">
+                                <h2 class="mb-0">
+                                    <button class="btn collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseEight" aria-expanded="false"
+                                        aria-controls="collapseEight">
+                                        Ｑ：舌下吸收式和直接食用法有何不同？
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    舌下吸收式最大的優點就是即效性。由於含在舌下，不會破壞胃酸成分，直接和血液進入全身行循環作用，可以到達間腦，因此效果會比其他營養食品快。其次是可以完全吸收類腮腺激素。從前食用蜂王漿、類腮腺激素都不利腸胃吸收。即使吸收了類腮腺激素，也無法使青春永駐、預防老化。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="classes-top card-header" id="headingNine">
+                                <h2 class="mb-0">
+                                    <button class="btn " type="button" data-toggle="collapse"
+                                        data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                                        Ｑ：蜂王漿該如何保存才比較不容易變質？
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    蜂王漿屬於「活性型」物質，其中包含豐富的營養素，因此很容易受環境及溫度影響而變質， 特別在含「酸」的環境中，例如空氣中的氧、或加入果汁中飲用， 會使得蜂王漿變質
+                                    。也不可曝曬在強光下，或久置金屬物於蜂王乳中。<br>
+
+                                    蜂王漿需處於相當低的溫度下保存。根據實驗報告：如果將蜂王漿保存在攝氏 -18℃中，可保存二年； 根據日本安大略大學史密斯博士的實驗報告：如果將 蜂王漿保存在攝氏-5℃~
+                                    2
+                                    ℃中，則可保存一年。因此最好的保存方式建議以冷凍方式較佳。一 般冰箱冷藏保存則約三個月。<br>
+
+                                    蜂王乳的新鮮度會隨著時間慢慢遞減，如果須要置於冷藏庫中食用，建議可以先取大約1~2星期的食用量置於冷藏庫中，分次食用。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="classes-top card-header" id="headingTen">
+                                <h2 class="mb-0">
+                                    <button class="btn collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                        Ｑ：如何選擇品質較好的蜂王乳？
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTen" class="collapse" aria-labelledby="headingTen"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    近年來，市場上充斥著來自大陸、東南亞的劣質蜂王乳，價格及品質的差異便自然而產生了，大陸、東南亞等較落後地區國家的養蜂技術與台灣尚有一段差距，尤其是採收技術及衛生安全更為人所詬病，之前還發現進口蜂王乳中含有重金屬鉛、汞、砷，甚至有抗生素的殘留情形
+                                    ,因此蜂王乳的購買就更值得消費者留意
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="classes-top card-header" id="headingEleven">
+                                <h2 class="mb-0">
+                                    <button class="btn collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseEleven" aria-expanded="false"
+                                        aria-controls="collapseEleven">
+                                        Ｑ：如何鑑別蜂王乳的優劣？
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    蜂王乳所含的營養素，如蛋白質、維生素、礦物質等都很齊全，其特別之處在於其含有多種的荷爾蒙，具有調節的功用，及含有其它天然物質中所沒有的 「癸稀酸」
+                                    ，所以市面上的蜂王乳，都以此含量作為產品優劣的指標。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="classes-title-Second">
+                        <img src="./img/classes/icon_list.png" alt="">
+                        認識蜂蜜
+                    </div>
+                    <div class="accordion" id="accordionExample2">
+                        <div class="card">
+                            <div class="card-header" id="headingTwelve">
+                                <h2 class="mb-0">
+                                    <button class="btn " type="button" data-toggle="collapse"
+                                        data-target="#collapseTwelve" aria-expanded="true"
+                                        aria-controls="collapseTwelve">
+                                        Ｑ：純正龍眼花蜜介紹與成份
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve"
+                                data-parent="#accordionExample2">
+                                <div class="card-body">
+                                    蜂蜜是蜜蜂採集植物上的花蜜，經過咽投腺分泌釀制而成的甜蜜物質。
+                                    成分有果糖、葡萄糖、微量維生素、礦物質、及酵素等，可被人體直接吸收，是一種很好的天然食品，且不會造成身體負擔而有肥胖的顧慮，因此，蜂蜜的價值實非其他糖類所能及的。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="classes-top card-header" id="headingThirteen">
+                                <h2 class="mb-0">
+                                    <button class="btn collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseThirteen" aria-expanded="false"
+                                        aria-controls="collapseThirteen">
+                                        Ｑ：蜂蜜對人體功效能保持人們生命健康 ？
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen"
+                                data-parent="#accordionExample2">
+                                <div class="card-body">
+                                    1.養顏美容、青春永駐<br>
+                                    2.調養體質、調解生理機能<br>
+                                    3.幫助維持消化道機能、使排便順暢<br>
+                                    4.滋補強身、增強體力<br>
+                                    5.營養補給、精神旺盛、健康維持<br>
+                                    6.青春源頭、延年益壽
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="classes-top card-header" id="headingFourteen">
+                                <h2 class="mb-0">
+                                    <button class="btn collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseFourteen" aria-expanded="false"
+                                        aria-controls="collapseFourteen">
+                                        Ｑ：蜂蜜結晶是假的嗎？蜂蜜可以分辨真假好壞嗎？
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen"
+                                data-parent="#accordionExample2">
+                                <div class="card-body">
+                                    目前市面上的蜂蜜的確假蜜充斥，尤其是開放式賣場或是超市所販賣的蜂蜜其偽假蜜的比率高達70﹪以上（國立中興大學食品科學系研究室曾做過市場調查），而以果糖加香料製成的假蜜最多，一般人很難分辨清楚。<br>
+                                    果糖製成的假蜜遇冷不結晶（純蜂蜜因葡萄糖成分高，低溫下易、會結晶）。<br>
+                                    假蜜因為加香精，香味很濃。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="classes-top card-header" id="headingFifteen">
+                                <h2 class="mb-0">
+                                    <button class="btn " type="button" data-toggle="collapse"
+                                        data-target="#collapseFifteen" aria-expanded="true"
+                                        aria-controls="collapseFifteen">
+                                        Ｑ：蜂蜜冷藏後結晶該怎麼辦？
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen"
+                                data-parent="#accordionExample2">
+                                <div class="card-body">
+                                    蜂蜜因為葡萄糖成分很高，結晶核遇冷(約13℃以下)或置於冰箱會結晶，這是正常物理現象，並不影響蜂蜜品質。好蜜結晶後潔白細膩有如豬油狀，結晶由下而上，柔軟而不堅硬。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="classes-top card-header" id="headingSixteen">
+                                <h2 class="mb-0">
+                                    <button class="btn collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseSixteen" aria-expanded="false"
+                                        aria-controls="collapseSixteen">
+                                        Ｑ： 蜂蜜可不可以泡熱水喝？
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen"
+                                data-parent="#accordionExample2">
+                                <div class="card-body">
+                                    不可、因蜂蜜含微量維生素、蛋白質、礦物質及酵素等營養物質、熱水沖泡會破壞期物質。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="classes-top card-header" id="headingSeventeen">
+                                <h2 class="mb-0">
+                                    <button class="btn collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseSeventeen" aria-expanded="false"
+                                        aria-controls="collapseSeventeen">
+                                        Ｑ：嬰兒適合吃蜂蜜嗎？
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseSeventeen" class="collapse" aria-labelledby="headingSeventeen"
+                                data-parent="#accordionExample2">
+                                <div class="card-body">
+                                    建議週歲後之嬰兒才讓他食用蜂蜜，剛出生的嬰兒發育尚未完全，蜂蜜內有一些菌類會造成不良影響，成人或週歲以後之嬰兒則不會受影響。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="classes-top card-header" id="headingEighteen">
+                                <h2 class="mb-0">
+                                    <button class="btn collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseEighteen" aria-expanded="false"
+                                        aria-controls="collapseEighteen">
+                                        Ｑ：蜂蜜的保存方法和期限？
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseEighteen" class="collapse" aria-labelledby="headingEighteen"
+                                data-parent="#accordionExample2">
+                                <div class="card-body">
+                                    蜂蜜保存：置於陰涼處即可，不用刻意放入冰箱保鮮，因為蜂蜜遇冷會結晶，保存期限：2年。本人建議酌量購買，以1年之內食用為佳。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="classes-title-Second">
+                        <img src="./img/classes/icon_list.png" alt="">
+                        認識花粉
+                    </div>
+                    <div class="accordion" id="accordionExample3">
+                        <div class="card">
+                            <div class="card-header" id="headingNineteen">
+                                <h2 class="mb-0">
+                                    <button class="btn " type="button" data-toggle="collapse"
+                                        data-target="#collapseNineteen" aria-expanded="true"
+                                        aria-controls="collapseNineteen">
+                                        Ｑ：花粉的食用方法為何？
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseNineteen" class="collapse" aria-labelledby="headingNineteen"
+                                data-parent="#accordionExample3">
+                                <div class="card-body">
+                                    1. 餐前約半小時，取花粉5-10公克直接含於口中咀嚼<br>
+                                    2. 花粉咖啡: 於沖泡的啡咖,加入約3-5公克的花粉,風味不同凡響。 也可加入牛乳,
+                                    果汁,紅茶內飲用。每天早晨調一杯蜂蜜汁(約250～300 ml)，加入約5公克的花
+                                    粉，放數分鐘後攪散飲用，也可按上列的比例一次調配1,500　ml存放冰箱內，
+                                    隨時或每天飲用，對養顏美容、幫助維持消化道機能、使排便順暢均有幫助，也
+                                    能補充一天所需的維生素、礦物質成分。
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="classes-top card-header" id="headingTwenty">
+                                    <h2 class="mb-0">
+                                        <button class="btn collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseTwenty" aria-expanded="false"
+                                            aria-controls="collapseTwenty">
+                                            Ｑ：花粉不能與什麼一起食用？對人體有何幫助？
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwenty" class="collapse" aria-labelledby="headingTwenty"
+                                    data-parent="#accordionExample3">
+                                    <div class="card-body">
+                                        一、不能與豆花、生魚片、螃蟹等食物同時食用。<br>
+                                        二、對服食奇寒或熱補者，食用後有緩和功能(如靈芝與補藥)。<br>
+                                        三、常常服食能增強體力，促進消化新陳代謝，滋補強身、增強體力並達到養顏美容 。<br>
+                                        四、因容易被吸收，故可營養補給、精神旺盛、健康維持。<br>
+                                        五、因係生鮮食品、幼兒(八個月以下不宜)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="classes-top card-header" id="headingTwenty-one">
+                                    <h2 class="mb-0">
+                                        <button class="btn collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseTwenty-one" aria-expanded="false"
+                                            aria-controls="collapseTwenty-one">
+                                            Ｑ：為什麼科學家稱花粉為大自然最完美的營養食品？
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwenty-one" class="collapse" aria-labelledby="headingTwenty-one"
+                                    data-parent="#accordionExample3">
+                                    <div class="card-body">
+                                        花粉是蜜蜂從花朵的花葯上採集後，再混合少許蜂蜜而成，是蜜蜂的糧食及釀製蜂王漿不可或缺的原料。<br>
+                                        花粉含96種不同性質的元素，其中維他命16種、礦物質16種、酵素及輔酵素18種。因此被科學家譽為大自然最完美的營養食品<br>
+                                        食用花粉可增進食慾，使胃腸活動正常，幫助維持消化道機能、使排便順暢，以及對養顏美容，有極大助益。<br>
+                                        (日本營養學家研究發現花粉含有100種以上營養元素，所以可以調節生理機能、滋補強身)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="classes-top card-header" id="headingTwenty-two">
+                                    <h2 class="mb-0">
+                                        <button class="btn " type="button" data-toggle="collapse"
+                                            data-target="#collapseTwenty-two" aria-expanded="true"
+                                            aria-controls="collapseTwenty-two">
+                                            Ｑ：花粉過敏症的人可食用花粉？
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseTwenty-two" class="collapse" aria-labelledby="headingTwenty-two"
+                                    data-parent="#accordionExample3">
+                                    <div class="card-body">
+                                        食用的花粉大多為蟲媒花，其花粉粒較大、質重、不易擴散，且經過蜜蜂加入蜂蜜、唾液的處理，使引起過敏的成分已減少或大部分已脫敏，對大多數食用或接觸者不致於產生過敏反應，只有極少數特殊過敏體質者，才會有過敏反應，日本報導155名食用花粉2-3個月，每天20-30公克，未有過敏反應出現。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="classes-top card-header" id="headingTwenty-three">
+                                    <h2 class="mb-0">
+                                        <button class="btn collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseTwenty-three" aria-expanded="false"
+                                            aria-controls="collapseTwenty-three">
+                                            Ｑ： 花粉要如何保存才不會變質？
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwenty-three" class="collapse" aria-labelledby="headingTwenty-three"
+                                    data-parent="#accordionExample3">
+                                    <div class="card-body">
+                                        新鮮花粉須冷凍保存及食用,在常溫下花粉營養價值會漸漸流失。連續食用一個月，再與先前的健康、精神比較，會讓您意想不到的效果。建議能分裝成小瓶裝，其餘貼封後放置於冰箱冷凍，減少水份侵入，增加保存時間
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="classes-top card-header" id="headingTwenty-four">
+                                    <h2 class="mb-0">
+                                        <button class="btn collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseTwenty-four" aria-expanded="false"
+                                            aria-controls="collapseTwenty-four">
+                                            Ｑ：採收花粉時為什麼要‘分多次採集’？品質有較好嗎？
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwenty-four" class="collapse" aria-labelledby="headingTwenty-four"
+                                    data-parent="#accordionExample3">
+                                    <div class="card-body">
+                                        生鮮花粉採集時易受細菌的污染和野生酵母侵蝕轉化，減少營養成份及鮮度，蜜鄉養蜂園的花粉不計人力成本，採集花粉時‘分多次採收’增加花粉的鮮度及保留其活性，品質當然比較好了。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="classes-more"><a href="http://www.honeyhome.com.tw/m/p34.html"> 更多相關訊息 &nbsp; >> </a>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="pic">
+            <img src="./img/public/footer.png" alt="">
+            <img src="./img/public/footer_576px.png" alt="">
+
+        </div>
+        <div class="txt">
+            <div class="logo">
+                <img src="./img/public/navbar_logo_2.png" alt="">
+
+            </div>
+            <div class="inf">
+                <p>
+                    <span> <img src="./img/public/phone-icon.png" alt="" class="phone_icon">0937-782555</span>
+                    <span>張先生</span>
+                    <span class="icon">
+                        <img src="./img/public/fb-icon.png" alt="">
+                        <img src="./img/public/ig-icon.png" alt="">
+                    </span>
+
+                </p>
+                <p><span>彰化縣員林市中正路138-1號</span></p>
+                <p><span>苗栗縣公館鄉褔基村132-8號 <span>(苗栗蜂場)</span></span></p>
+                <p><span>桃園市大園區中山南路一段425號 <span>(桃園蜂場)</span></span></p>
+                <p><span>蜂場依季節逐花遷徙採收，<span>現場取貨請先電話聯繫預約</span></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed_icon" id="fixed_icon">
+        <div class="shop_car"><img src="./img/public/icon_shop_car_v2.png" alt=""></div>
+        <div class="top active" id="gototop">
+            <img src="./img/public/icon_top_orange.png" alt="" class=" active" id="img1">
+            <img src="./img/public/icon_top_white.png" alt="" class="" id="img2">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+
+    <script>
+        var card_btn = document.querySelectorAll('.card-header')
+
+        for (let i = 0; i < card_btn.length; i++) {
+            const element = card_btn[i];
+            element.onclick = function () {
+                remove()
+                element.classList.toggle('active')
+            }
+        }
+        function remove() {
+            for (let i = 0; i < card_btn.length; i++) {
+                card_btn[i].classList.remove('active')
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./jquery/navbar_menu.js"></script>
+    <script src="./jquery/public.js"></script>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 100) {
+                    $("#fixed_icon").css('display', 'block')
+                } else if ($(window).scrollTop() < 100) {
+                    $("#fixed_icon").css('display', 'none')
+                }
+            });
+
+
+        });
+        $("#gototop").click(function () {
+            $(window).scrollTop('0')
+        });
+
+    </script>
+</body>
+
+</html>
