@@ -1,0 +1,47 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.fixed_icon {
+  display: none;
+  position: fixed;
+  right: 25px;
+  bottom: 100px;
+  .top {
+    margin-top: 15px;
+    border-radius: 50%;
+    img {
+      border: 2px solid #fff;
+      border-radius: 50%;
+
+      @media (max-width: 576px) {
+        width: 75%;
+      }
+    }
+    #img1 {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+    #img2 {
+      border: 2px solid #df971f;
+      
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+
+  .shop_car {
+    img {
+      border: 2px solid #fff;
+      border-radius: 50%;
+
+      @media (max-width: 576px) {
+        width: 75%;
+      }
+    }
+  }
+}

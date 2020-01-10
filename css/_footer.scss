@@ -1,0 +1,136 @@
+footer {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  .pic {
+    position: relative;
+    z-index: -1;
+
+    img {
+      width: 100%;
+      &:nth-child(1) {
+        display: block;
+      }
+      &:nth-child(2) {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        &:nth-child(1) {
+          display: none;
+        }
+        &:nth-child(2) {
+          display: block;
+        }
+      }
+    }
+  }
+  .txt {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 5%;
+    @media (max-width: 768px) {
+      bottom: 50%;
+      transform: translate(0, 100%);
+    }
+    @media (max-width: 414px) {
+      bottom: 50%;
+      transform: translate(0, 80%);
+    }
+    .logo {
+      margin-right: 20px;
+      img {
+        @media (max-width: 424px) {
+          display: none;
+        }
+      }
+    }
+    .inf {
+      position: relative;
+      color: #fff;
+      line-height: 40px;
+      @media (max-width: 1200px) {
+        line-height: 30px;
+      }
+      @media (max-width: 768px) {
+        line-height: 40px;
+      }
+      p {
+        margin: 0;
+        .phone_icon {
+          position: relative;
+
+          margin-right: 5px;
+          bottom: 3px;
+        }
+        .icon {
+          position: relative;
+          bottom: 10px;
+          float: right;
+          clear: both;
+          @media (max-width: 768) {
+            width: 25%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  footer {
+    .txt {
+      .logo {
+        display: none;
+        img {
+          width: 100%;
+        }
+      }
+      .inf {
+        p {
+          line-height: 30px;
+          span:nth-child(1) img {
+            width: 5%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  footer {
+    .txt {
+      .inf {
+        line-height: 30px;
+        p:nth-child(5) span {
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 360px) {
+  footer {
+    .txt {
+      .logo {
+        img {
+          width: 100%;
+        }
+      }
+      .inf {
+        p {
+          line-height: 20px;
+          span:nth-child(1) img {
+            width: 5%;
+          }
+        }
+      }
+    }
+  }
+}

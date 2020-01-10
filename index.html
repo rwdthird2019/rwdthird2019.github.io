@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        .menu_block {
+            display: flex;
+            height: 100%;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar1">
+            <div class="container-1">
+                <div class="menu_block">
+                    <div class="menu_ctrl" id="nav-icon2">
+                        <svg class="ham ham6" viewBox="0 0 100 100" width="60"
+                            onclick="this.classList.toggle('active')">
+                            <path class="line top"
+                                d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272" />
+                            <path class="line middle"
+                                d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272" />
+                            <path class="line bottom"
+                                d="m 69.575405,67.073826 h -40 c -13.100415,0 -14.380204,-31.80258 -6.899646,-33.421777 24.612039,-5.327373 -9.016154,52.337577 12.75751,30.563913 l 28.284272,-28.284272" />
+                        </svg>
+                    </div>
+
+                    <div class="logo" onclick="document.location.href='index.html'">
+                        <img src="./img/navbar_logo_2.png" alt="">
+                    </div>
+                </div>
+                <ul class="menu1">
+                    <li>養蜂園簡介</li>
+                    <li>養蜂實景</li>
+                    <li>蜂產品系列</li>
+                    <li onclick="document.location.href='index.html'"><img src="./img/navbar_logo_2.png" alt=""></li>
+                    <li>蜂產品小教室</li>
+                    <li onclick="document.location.href='buy.html'">商品購買</li>
+                    <li onclick="document.location.href='connection.html'">聯絡我們</li>
+                </ul>
+                <ul class="menu5" id="menu5">
+                    <li onclick="document.location.href='index.html'"><img src="./img/menu_home_icon.png" alt="">首頁</li>
+                    <li>養蜂園簡介</li>
+                    <li>養蜂實景</li>
+                    <li>蜂產品系列</li>
+                    <li>蜂產品小教室</li>
+                    <li id="first_li" onclick="document.location.href='buy.html'">商品購買
+                        <ul class="second_ul" id="second_ul">
+                            <li class="second_li" id="second_li1">天然蜂蜜
+                                <ul class="third_ul" id="third_ul1">
+                                    <li>龍眼蜂蜜</li>
+                                    <li>特產蜂蜜</li>
+                                    <li>蜂蜜抹醬</li>
+                                </ul>
+                            </li>
+
+                            <li class="second_li" id="second_li2">
+                                蜂王乳
+                                <ul class="third_ul" id="third_ul2">
+                                    <li>外銷蜂王乳</li>
+                                    <li>蜂王乳膠囊</li>
+                                </ul>
+                            </li>
+                            <li class="second_li" id="second_li3">
+                                蜂子
+                                <ul class="third_ul" id="third_ul3">
+                                    <li>雄蜂子</li>
+                                    <li>女王蜂子</li>
+                                </ul>
+                            </li>
+
+                            <li class="second_li" id="second_li4">
+                                花粉
+                                <ul class="third_ul" id="third_ul4">
+                                    <li>原體蜂花粉</li>
+                                    <li>破壁蜂花粉</li>
+                                </ul>
+                            </li>
+
+                            <li class="second_li" id="second_li5">
+                                蜂膠
+                            </li>
+
+                            <li class="second_li" id="second_li6">
+                                蜂蜜禮盒
+                                <ul class="third_ul" id="third_ul6">
+                                    <li>純釀蜂蜜醋</li>
+                                    <li>甜蜜伴手禮</li>
+                                </ul>
+                            </li>
+                            <li class="second_li" id="second_li7">
+                                團購單填寫
+                            </li>
+                        </ul>
+                    </li>
+                    <li onclick="document.location.href='connection.html'">聯絡我們</li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <div class="banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./img/banner/750/banner-1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/banner/750/banner-3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/banner/750/banner-2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/banner/750/banner-4.png" alt=""></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="news">
+                <div class="container-1">
+                    <div class="title">
+                        <h1>最新消息</h1>
+                        <img src="./img/title-direction.png" alt="">
+                    </div>
+                    <div class="item_group">
+                        <div class="item ">
+                            <span class="date">2019/04/16</span>
+                            <span class="inf">《草地狀元》黃西田 深入採訪介紹-蜜鄉養蜂園</span>
+                        </div>
+                        <div class="item ">
+                            <span class="date">2018/07/24</span>
+                            <span class="inf">榮獲全國龍眼蜂蜜評鑑比賽"特等獎</span>
+                        </div>
+                        <div class="item ">
+                            <span class="date">2017/07/10</span>
+                            <span class="inf">蜜鄉養蜂園 2017年 最新安全,質量檢驗</span>
+                        </div>
+                        <div class="item ">
+                            <span class="date">2016/09/12</span>
+                            <span class="inf">台視新聞採訪(冠軍蜂農傳承三代養蜂哲學)尋找台灣感動力</span>
+                        </div>
+                        <div class="item ">
+                            <div class="date">2016/07/25</div>
+                            <div class="inf">蜂の優–女王蜂子、21日雄蜂子,連續外銷日本16年,閃亮登場</div>
+                        </div>
+
+                        <div class="btn">
+                            <button onclick="document.location.href='news.html'">更多消息</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pic">
+                    <img src="./img/index_news_bg_576px.png" alt="">
+                </div>
+            </div>
+
+            <div class="produce">
+                <div class="title">
+                    <h1>熱賣商品</h1>
+                    <img src="./img/title-direction.png" alt="">
+                </div>
+                <div class="products-group">
+                    <div class="products-item">
+                        <img src="./img/produce/produce_1.png" alt="2017頭等獎全國比賽蜂蜜 700g拷貝+1">
+                        <div class="products-item-hover">特選蜂蜜</div>
+                    </div>
+                    <div class="products-item">
+                        <img src="./img/produce/produce_2.png" alt="精緻禮盒裝-蜂蜜活醋400ml+1">
+                        <div class="products-item-hover">蜂蜜活醋</div>
+                    </div>
+                    <div class="products-item">
+                        <img src="./img/produce/produce_3.png" alt="天然百花粉300g拷貝+1">
+                        <div class="products-item-hover">天然百花粉</div>
+                    </div>
+                    <div class="products-item">
+                        <img src="./img/produce/produce_4.png" alt="蜂の優 女王蜂子膠囊品牌">
+                        <div class="products-item-hover">蜂の優 女王蜂子膠囊</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="container-1">
+                    <div class="title">
+                        <h1>媒體採訪</h1>
+                        <img src="./img/title-direction.png" alt="">
+                    </div>
+                    <div class="video-group">
+                        <div class="video-item">
+                            <div class="second-title">
+                                台視新聞
+                            </div>
+                            <div class="second-title-inf">
+                                <div class="pic">
+                                    <img src="./img/tv1.png" alt="台視">
+                                </div>
+                                <div class="txt">
+                                    <p>今年因為寒冷，導致花期大受影響，連帶蜜蜂也找不到花可以採蜜，儘管如此，彰化員林一個老字號養蜂園，出產的龍眼蜜依舊獲得全國評鑑冠軍！</p>
+                                    <p>第二代主人張耀文和兒子張志程，為了蜂蜜的產量和品質，堅持不用耀，一年四季更要隨著各地的花期，帶著蜂四處遷徒，父子倆開玩笑地自稱，就像現代版的遊牧民族。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-item d-flex">
+                            <div class="second-title">
+                                <span>三立電視台</span>
+                                <span class="second-title2">《草地狀元》黃西田 深入採訪介紹-蜜鄉養蜂園</span>
+                            </div>
+                            <div class="video-url col-lg-10">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-74JN1dKqbE"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="pic">
+            <img src="./img/footer.png" alt="">
+            <img src="./img/footer_576px.png" alt="">
+
+        </div>
+        <div class="txt">
+            <div class="logo">
+                <img src="./img/navbar_logo_2.png" alt="">
+
+            </div>
+            <div class="inf">
+                <p>
+                    <span> <img src="./img/phone-icon.png" alt="" class="phone_icon">0937-782555</span>
+                    <span>張先生</span>
+                    <span class="icon">
+                        <img src="./img/fb-icon.png" alt="">
+                        <img src="./img/ig-icon.png" alt="">
+                    </span>
+
+                </p>
+                <p><span>彰化縣員林市中正路138-1號</span></p>
+                <p><span>苗栗縣公館鄉褔基村132-8號 <span>(苗栗蜂場)</span></span></p>
+                <p><span>桃園市大園區中山南路一段425號 <span>(桃園蜂場)</span></span></p>
+                <p><span>蜂場依季節逐花遷徙採收，<span>現場取貨請先電話聯繫預約</span></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed_icon" id="fixed_icon">
+        <div class="shop_car"><img src="./img/icon_shop_car_v2.png" alt=""></div>
+        <div class="top active" id="gototop">
+            <img src="./img/icon_top_orange.png" alt="" class=" active" id="img1">
+            <img src="./img/icon_top_white.png" alt="" class="" id="img2">
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./jquery/navbar_menu.js"></script>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 100) {
+                    $("#fixed_icon").css('display', 'block')
+                } else if ($(window).scrollTop() < 100) {
+                    $("#fixed_icon").css('display', 'none')
+                }
+            });
+
+
+        });
+
+        $("#gototop").mousedown(function () {
+
+            $("#img1").removeClass('active')
+            $("#img2").addClass('active')
+
+        });
+
+        $("#gototop").on({
+            'touchstart': function () {
+                $("#img1").removeClass('active')
+                $("#img2").addClass('active')
+            }
+        });
+
+        $("#gototop").mouseup(function () {
+            $("#img1").addClass('active')
+            $("#img2").removeClass('active')
+            $(window).scrollTop('0')
+        });
+
+
+        $("#gototop").on({
+            'touchend': function () {
+                $("#img1").addClass('active')
+                $("#img2").removeClass('active')
+                $(window).scrollTop('0')
+            }
+        });
+    </script>
+</body>
+
+</html>

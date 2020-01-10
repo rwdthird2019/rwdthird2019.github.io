@@ -1,0 +1,93 @@
+@import "./font-size";
+
+.news {
+  position: relative;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 400px;
+  background-image: url("./img/index_news_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .container-1 {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+    text-align: center;
+
+
+    .title {
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: $fontsize-first-title;
+      margin-bottom: 100px;
+      color: #f0a312;
+      position: relative;
+    }
+    .item_group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      position: relative;
+      .item {
+        width: 70%;
+        padding: 15px 50px 15px 50px;
+        font-size: 18px;
+        border-top: 2px solid #189aa7;
+        text-align: left;
+        display: flex;
+
+        &:nth-child(6) {
+          justify-content: center;
+        }
+        .inf {
+          margin-left: 60px;
+        }
+        .page {
+          margin-top: 50px;
+          ul {
+            display: flex;
+            justify-content: center;
+            li {
+              width: 45px;
+              height: 45px;
+              border: 1px solid #18929f;
+              text-align: center;
+              font-size: 18px;
+              position: relative;
+              line-height: 45px;
+
+              &.active {
+                background-color: #18929f;
+                color: #fff;
+              }
+              &:hover {
+                cursor: pointer;
+              }
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .pic {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+}

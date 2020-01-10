@@ -1,0 +1,24 @@
+// @mixin title() {
+//     padding-top: 100px;
+//     padding-bottom: 50px;
+// }
+
+@mixin margin-auto {
+    margin: 0 auto;
+}
+
+@mixin text-center {
+    text-align: center;
+}
+
+@mixin title-style(){
+    
+}
+
+@mixin title-to-top-100px{
+    padding-top: 100px;
+}
+
+@mixin title-to-top-60px{
+    padding-top: 60px;
+}

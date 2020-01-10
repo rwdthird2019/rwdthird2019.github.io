@@ -1,0 +1,110 @@
+@import "./_header";
+@import "./footer";
+@import "./nav_bar";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.news {
+  background: linear-gradient(to top, rgba(247, 246, 231, 0.24), rgba(199, 243, 249, 0.24));
+  width: 100%;
+  padding-top: 100px;
+  .container-1 {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+    text-align: center;
+
+    .title {
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 100px;
+      color: #f0a312;
+      position: relative;
+    }
+    .item_group {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      .item {
+        width: 100%;
+        padding: 15px 50px 15px 50px;
+        font-size: 18px;
+        border-top: 2px solid #189aa7;
+        text-align: left;
+        display: flex;
+        @media (max-width: 1200px) {
+          width: 80%;
+        }
+        @media (max-width: 992px) {
+          width: 90%;
+        }
+        @media (max-width: 768px) {
+          padding: 15px 25px 15px 25px;
+        }
+        @media (max-width: 576px) {
+          flex-direction: column;
+          text-align: center;
+          padding: 15px 0;
+        }
+        &:nth-child(6) {
+          justify-content: center;
+          @media (max-width: 576px) {
+            width: 100%;
+            padding: 0;
+          }
+        }
+        .inf {
+          margin-left: 60px;
+          @media (max-width: 992px) {
+            margin-left: 40px;
+          }
+          @media (max-width: 576px) {
+            margin-top: 15px;
+            margin-left: 0;
+          }
+        }
+        .page {
+          margin-top: 35px;
+          ul {
+            display: flex;
+            justify-content: center;
+            li {
+              width: 45px;
+              height: 45px;
+              border: 1px solid #18929f;
+              text-align: center;
+              font-size: 18px;
+              position: relative;
+              line-height: 45px;
+
+              &.active {
+                background-color: #18929f;
+                color: #fff;
+              }
+              &:hover {
+                cursor: pointer;
+              }
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
