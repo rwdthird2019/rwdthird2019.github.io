@@ -17,6 +17,10 @@ console.log(location.pathname);
 
 (function () {
     switch (location.pathname) {
+        case '/':
+            path = 3
+            move_line(path)
+            break
         case '/index.html':
             path = 3
             move_line(path)
