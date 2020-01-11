@@ -1,5 +1,5 @@
-@charset "UTF-8";
 .loadpages {
+  opacity: 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -34,23 +34,23 @@
           flex-direction: column;
 }
 
-.loadpages .page1 img {
-  position: relative;
-  width: 88px;
-  height: 100px;
-  position: relative;
-  /* transform: translate(-120%, -10px); */
-  /* 265px 滿 */
-  z-index: 250;
-}
-
 .loadpages .page1 .load_line {
+  position: relative;
   width: 425px;
   height: 35px;
   border: 1px solid #f4c53d;
   text-align: center;
   line-height: 25px;
   text-align: right;
+}
+
+.loadpages .page1 .load_line #bee_img {
+  position: absolute;
+  top: -100px;
+  left: 0%;
+  width: 88px;
+  height: 100px;
+  z-index: 250;
 }
 
 @media (max-width: 576px) {

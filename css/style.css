@@ -634,6 +634,18 @@ body {
   background: linear-gradient(to top, rgba(247, 246, 231, 0.24), rgba(199, 243, 249, 0.24));
 }
 
+#homepage {
+  opacity: 0;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+main {
+  opacity: 0;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
 main .content {
   max-width: 1920px;
   margin: 0 auto;
