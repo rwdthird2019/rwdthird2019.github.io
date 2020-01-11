@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/series.css">
     <link rel="stylesheet" href="./css/public.css">
+
 </head>
 
 <body>
@@ -35,59 +37,60 @@
                         <img src="./img/navbar_logo_2.png" alt="">
                     </div>
                 </div>
-                <ul class="menu1">
+                <ul class="menu1" id="menu1">
                     <li onclick="document.location.href='introduction.html'">養蜂園簡介</li>
                     <li onclick="document.location.href='scene.html'">養蜂實景</li>
                     <li onclick="document.location.href='series.html'">蜂產品系列</li>
                     <li onclick="document.location.href='index.html'"><img src="./img/navbar_logo_2.png" alt=""></li>
                     <li onclick="document.location.href='classes.html'">蜂產品小教室</li>
-                    <li onclick="document.location.href='buy.html'">商品購買</li>
+                    <li onclick="document.location.href='buy.html?f_li=0&s_li=0'">商品購買</li>
                     <li onclick="document.location.href='connection.html'">聯絡我們</li>
                 </ul>
                 <ul class="menu5" id="menu5">
-                    <li onclick="document.location.href='index.html'"><img src="./img/public/menu_home_icon.png" alt="">首頁</li>
+                    <li onclick="document.location.href='index.html'"><img src="./img/public/menu_home_icon.png"
+                            alt="">首頁</li>
                     <li onclick="document.location.href='introduction.html'">養蜂園簡介</li>
                     <li onclick="document.location.href='scene.html'">養蜂實景</li>
                     <li onclick="document.location.href='series.html'">蜂產品系列</li>
                     <li onclick="document.location.href='classes.html'">蜂產品小教室</li>
-                    <li id="first_li" onclick="document.location.href='buy.html'">商品購買
+                    <li id="first_li">商品購買
                         <ul class="second_ul" id="second_ul">
                             <li class="second_li" id="second_li1">天然蜂蜜
                                 <ul class="third_ul" id="third_ul1">
-                                    <li>龍眼蜂蜜</li>
-                                    <li>特產蜂蜜</li>
-                                    <li>蜂蜜抹醬</li>
+                                    <li onclick="document.location.href='buy.html?li_num=0'">龍眼蜂蜜</li>
+                                    <li onclick="document.location.href='buy.html?li_num=1'">特產蜂蜜</li>
+                                    <li onclick="document.location.href='buy.html?li_num=2'">蜂蜜抹醬</li>
                                 </ul>
                             </li>
                             <li class="second_li" id="second_li2">
                                 蜂王乳
                                 <ul class="third_ul" id="third_ul2">
-                                    <li>外銷蜂王乳</li>
-                                    <li>蜂王乳膠囊</li>
+                                    <li onclick="document.location.href='buy.html?li_num=3'">外銷蜂王乳</li>
+                                    <li onclick="document.location.href='buy.html?li_num=4'">蜂王乳膠囊</li>
                                 </ul>
                             </li>
                             <li class="second_li" id="second_li3">
                                 蜂子
                                 <ul class="third_ul" id="third_ul3">
-                                    <li>雄蜂子</li>
-                                    <li>女王蜂子</li>
+                                    <li onclick="document.location.href='buy.html?li_num=5'">雄蜂子</li>
+                                    <li onclick="document.location.href='buy.html?li_num=6'">女王蜂子</li>
                                 </ul>
                             </li>
                             <li class="second_li" id="second_li4">
                                 花粉
                                 <ul class="third_ul" id="third_ul4">
-                                    <li>原體蜂花粉</li>
-                                    <li>破壁蜂花粉</li>
+                                    <li onclick="document.location.href='buy.html?li_num=7'">原體蜂花粉</li>
+                                    <li onclick="document.location.href='buy.html?li_num=8'">破壁蜂花粉</li>
                                 </ul>
                             </li>
-                            <li class="second_li" id="second_li5">
+                            <li class="second_li" id="second_li5" onclick="document.location.href='buy.html?li_num=99'">
                                 蜂膠
                             </li>
                             <li class="second_li" id="second_li6">
                                 蜂蜜禮盒
                                 <ul class="third_ul" id="third_ul6">
-                                    <li>純釀蜂蜜醋</li>
-                                    <li>甜蜜伴手禮</li>
+                                    <li onclick="document.location.href='buy.html?li_num=9'">純釀蜂蜜醋</li>
+                                    <li onclick="document.location.href='buy.html?li_num=10'">甜蜜伴手禮</li>
                                 </ul>
                             </li>
                             <li class="second_li" id="second_li7">
@@ -113,14 +116,14 @@
                 <div class="series-block-bottom-50">
                     <div class="container">
                         <div class="series-flex">
-                            <div class="series-pic">
-                                <img class="series-pic-img" src="./img/series/01.png" alt="天然蜂蜜">
+                            <div class="series-pic" data-aos="fade-up">
+                                <img class="series-pic-img" src="./img/series/01.png" alt="天然蜂蜜" >
                                 <div class="series-pic-text">天然蜂蜜</div>
                                 <div class="bee-left">
                                     <img src="./img/series/bee-left.png" alt=""></div>
                             </div>
-                            <div class="series-narrative series-narrative-title">
-                                <div>
+                            <div class="series-narrative series-narrative-title" data-aos="fade-up">
+                                <div >
                                     <div class="series-narrative-title series-narrative-bottom-20   ">關於蜂蜜</div>
                                     <div class="series-narrative-content series-narrative-bottom-20">
                                         本園蜜蜂採收後，不定期檢驗，證實為無抗生素殘留、無污染物、合乎國家標準。（本園生產高品質的蜂產品是蜜鄉對客戶誠信的保証）
@@ -151,7 +154,7 @@
                 <div class="series-block-top-bottom-50 series-block-bg">
                     <div class="container">
                         <div class="series-flex">
-                            <div class="series-narrative series-narrative-right">
+                            <div class="series-narrative series-narrative-right" data-aos="fade-up">
                                 <div>
                                     <div class="series-narrative-title series-narrative-bottom-20   ">關於蜂王漿</div>
                                     <div class="series-narrative-content series-narrative-bottom-20">
@@ -171,7 +174,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="series-pic">
+                            <div class="series-pic" data-aos="fade-up">
                                 <img class="series-pic-img" src="./img/series/02.png" alt="天然蜂王乳">
                                 <div class="series-pic-text">天然蜂王乳</div>
                                 <div class="bee-right">
@@ -183,12 +186,12 @@
                 <div class="series-block-top-bottom-50">
                     <div class="container">
                         <div class="series-flex">
-                            <div class="series-pic"><img class="series-pic-img" src="./img/series/03.png" alt="天然花粉">
+                            <div class="series-pic" data-aos="fade-up"><img class="series-pic-img" src="./img/series/03.png" alt="天然花粉">
                                 <div class="series-pic-text">天然花粉</div>
                                 <div class="bee-left">
                                     <img src="./img/series/bee-left.png" alt=""></div>
                             </div>
-                            <div class="series-narrative">
+                            <div class="series-narrative" data-aos="fade-up">
                                 <div>
                                     <div class="series-narrative-title series-narrative-bottom-20   ">關於花粉</div>
                                     <div class="series-narrative-content series-narrative-bottom-20">
@@ -213,7 +216,7 @@
                 <div class="series-block-top-bottom-50">
                     <div class="container">
                         <div class="series-flex">
-                            <div class="series-narrative series-narrative-right">
+                            <div class="series-narrative series-narrative-right" data-aos="fade-up">
                                 <div>
                                     <div class="series-narrative-title series-narrative-bottom-20   ">關於蜂蜜醋</div>
                                     <div class="series-narrative-content series-narrative-bottom-20">
@@ -231,7 +234,7 @@
                                     <div class="series-narrative-content">可直接以冷開水或冰塊稀釋飲用，冰涼或加入生機飲料中更見風味。</div>
                                 </div>
                             </div>
-                            <div class="series-pic">
+                            <div class="series-pic" data-aos="fade-up">
                                 <img class="series-pic-img " src="./img/series/04.png" alt="蜂蜜醋">
                                 <div class="series-pic-text"> 蜂蜜醋</div>
                                 <div class="bee-right">
@@ -243,13 +246,13 @@
                 <div class="series-block-top-bottom-50">
                     <div class="container">
                         <div class="series-flex">
-                            <div class="series-pic">
+                            <div class="series-pic" data-aos="fade-up"> 
                                 <img class="series-pic-img " src="./img/series/05.png" alt="蜂膠">
                                 <div class="series-pic-text">蜂膠</div>
                                 <div class="bee-left">
                                     <img src="./img/series/bee-left.png" alt=""></div>
                             </div>
-                            <div class="series-narrative">
+                            <div class="series-narrative" data-aos="fade-up">
                                 <div>
                                     <div class="series-narrative-title series-narrative-bottom-20   ">關於蜂王漿</div>
                                     <div class="series-narrative-content series-narrative-bottom-20">
@@ -275,7 +278,7 @@
                 <div class="series-block-top-bottom-50 series-block-bg">
                     <div class="container">
                         <div class="series-flex">
-                            <div class="series-narrative series-narrative-right">
+                            <div class="series-narrative series-narrative-right"data-aos="fade-up" >
                                 <div>
                                     <div class="series-narrative-title series-narrative-bottom-20   ">保存方式</div>
                                     <div class="series-narrative-content series-narrative-bottom-20">
@@ -287,7 +290,7 @@
                                     <div class="series-narrative-content">可直接 搭配茶品食用，冰涼後食用更見風味。</div>
                                 </div>
                             </div>
-                            <div class="series-pic">
+                            <div class="series-pic" data-aos="fade-up">
                                 <img class="series-pic-img " src="./img/series/06.png" alt="蜂蜜蛋糕">
                                 <div class="series-pic-text">蜂蜜蛋糕</div>
                                 <div class="bee-right">
@@ -299,13 +302,13 @@
                 <div class="series-block-top-bottom-50">
                     <div class="container">
                         <div class="series-flex">
-                            <div class="series-pic">
+                            <div class="series-pic" data-aos="fade-up">
                                 <img class="series-pic-img " src="./img/series/07.png" alt="蜂子">
                                 <div class="series-pic-text">蜂子</div>
                                 <div class="bee-left">
                                     <img src="./img/series/bee-left.png" alt=""></div>
                             </div>
-                            <div class="series-narrative">
+                            <div class="series-narrative" data-aos="fade-up">
                                 <div>
                                     <div class="series-narrative-title series-narrative-bottom-20   ">保存方式</div>
                                     <div class="series-narrative-content">製造日期標示於盒蓋內；保存期限標示於盒底， 請於保存期限內食用。</div>
@@ -563,7 +566,7 @@
         </div>
     </div>
 
-  
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
         integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"></script>
@@ -571,7 +574,7 @@
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./jquery/navbar_menu.js"></script>
     <script src="./jquery/public.js"></script>
@@ -591,6 +594,9 @@
             },
         });
     </script>
+      <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

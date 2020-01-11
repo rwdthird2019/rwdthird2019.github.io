@@ -72,7 +72,9 @@ function move_line(num) {
 }
 
 
-
+window.onresize = function(){
+    move_line(path)
+}
 
 // -------------------navbar under line---------------------------------
 $(function () {
@@ -108,4 +110,6 @@ $("#gototop").on({
         $(window).scrollTop('0')
     }
 });
+
+
 // -------------------gototop  end---------------------------------

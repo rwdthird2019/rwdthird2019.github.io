@@ -2,9 +2,11 @@ var icon2 = document.querySelector('#nav-icon2')
 var first_li_hasclass = false
 var second_li_hasclass = false
 
+
 // 控制漢堡條的長相
 icon2.onclick = function () {
     icon2.classList.toggle('open')
+    console.log('aaa');
 }
 // ------跑出來的選單動作 start------
 $("#nav-icon2").click(function () {
