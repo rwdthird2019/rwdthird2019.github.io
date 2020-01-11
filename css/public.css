@@ -3,17 +3,20 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: '微軟正黑體';
+  font-family: "微軟正黑體";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #menu_line {
-    position: absolute;
-    width: 100px;
-    height: 3px;
-    border-radius: 5px;
-    background-color: #E89B12;
-    top: 95px;
-    left: 405px;
-    transition-duration: .3s;
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #e89b12;
+  top: 95px;
+  left: 405px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 /*# sourceMappingURL=public.css.map */

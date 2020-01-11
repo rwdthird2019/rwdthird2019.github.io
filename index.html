@@ -11,22 +11,25 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="./css/public.css">
     <link rel="stylesheet" href="./css/style.css">
-    <style>
-        #menu_line {
-            position: absolute;
-            width: 100px;
-            height: 3px;
-            border-radius: 5px;
-            background-color: #E89B12;
-            top: 95px;
-            left: 405px;
-            transition-duration: .3s;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/loading.css">
+   
 </head>
 
 <body>
-    <header>
+
+    <div class="loadpages" id='loadpages'>
+        <div class="page1">
+            <img src="./img/loading/bee-02.png" alt="" id="bee_img">
+            <div class="load_line">
+                <span id="load_line_content">
+                    <img src="./img/loading/bar.png" alt="">
+                </span>
+                <span id="load_line_txt">0%</span>
+            </div>
+        </div>
+    </div>
+
+    <header id="homepage">
         <nav class="navbar1">
             <div class="container-1">
                 <span id="menu_line"></span>
@@ -133,7 +136,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
 
-    <main>
+    <main id="main">
         <div class="content">
             <div class="news">
                 <div class="container-1">
@@ -237,7 +240,7 @@
         </div>
 
     </main>
-    <footer>
+    <footer id="footer">
         <div class="pic">
             <img src="./img/public/footer.png" alt="">
             <img src="./img/public/footer_576px.png" alt="">
@@ -278,6 +281,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./jquery/navbar_menu.js"></script>
     <script src="./jquery/public.js"></script>
+    <script src="./jquery/loading.js"></script>
 
     <script>
         var swiper = new Swiper('.swiper-container', {
