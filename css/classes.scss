@@ -17,12 +17,7 @@ main {
       @include title-to-top-60px;
     }
     .container {
-      .classes-contianer {
-        @media (max-width: 576px) {
-          padding-left: 40px;
-          padding-right: 40px;
-        }
-      }
+
 
       .classes-title {
         padding-bottom: 100px;
