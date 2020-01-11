@@ -12,7 +12,7 @@
   z-index: 50;
 }
 
-.page1 {
+.loadpages .page1 {
   width: 100%;
   height: 100%;
   background-image: url("../img/loading/2019-12-27-bg.png");
@@ -34,7 +34,7 @@
           flex-direction: column;
 }
 
-.page1 img {
+.loadpages .page1 img {
   position: relative;
   width: 88px;
   height: 100px;
@@ -44,7 +44,7 @@
   z-index: 250;
 }
 
-.page1 .load_line {
+.loadpages .page1 .load_line {
   width: 425px;
   height: 35px;
   border: 1px solid #f4c53d;
@@ -53,7 +53,19 @@
   text-align: right;
 }
 
-#load_line_txt {
+@media (max-width: 576px) {
+  .loadpages .page1 .load_line {
+    width: 360px;
+  }
+}
+
+@media (max-width: 360px) {
+  .loadpages .page1 .load_line {
+    width: 320px;
+  }
+}
+
+.loadpages .page1 .load_line #load_line_txt {
   display: block;
   margin-top: 10px;
   position: relative;
@@ -61,21 +73,22 @@
   color: #eec935;
 }
 
-#load_line_content {
+.loadpages .page1 .load_line #load_line_content {
   top: 0;
   display: block;
   width: 0;
   height: 100%;
   padding: 5px;
-  /* background: linear-gradient(to right,#a07d24 , #865824 , #b18e44 ,#c4ad78 , #c29132 ,#b89646 ,#856026); */
 }
 
-#load_line_content img {
+.loadpages .page1 .load_line #load_line_content img {
+  position: relative;
+  top: -3px;
   width: 100%;
   height: 100%;
 }
 
-.txt {
+#load_line_content .txt {
   margin-top: 50px;
 }
 /*# sourceMappingURL=loading.css.map */
