@@ -1,3 +1,5 @@
+// @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+
 header {
   .navbar1 {
     width: 100%;
@@ -215,6 +217,7 @@ header {
   header {
     .navbar1 {
       .container-1 {
+        position: relative;
         .menu_block {
           display: flex;
         }
@@ -246,13 +249,20 @@ header {
             color: #fff;
             opacity: 0;
             transform-origin: top center;
-
+            i{
+              transition-duration: .3s;
+              margin-left: 10px;
+            }
+            i.active{
+              transform: rotate(180deg);
+            }
             #second_ul {
               position: relative;
               top: 4px;
               width: calc(100% + 10px);
               left: -10px;
               display: none;
+             
 
               & > li {
                 padding-left: 30px;
@@ -270,6 +280,8 @@ header {
                   width: calc(100% + 40px);
                   top: 4px;
                   left: -40px;
+                  background-color: #fff;
+                  color: #000;
                 }
                 .third_ul > li:nth-child(1) {
                   background-color: #fff;
