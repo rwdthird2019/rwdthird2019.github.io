@@ -520,6 +520,9 @@ header .navbar1 .container-1 .menu2 #second_ul > li {
 }
 
 @media (max-width: 768px) {
+  header .navbar1 .container-1 {
+    position: relative;
+  }
   header .navbar1 .container-1 .menu_block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -558,11 +561,13 @@ header .navbar1 .container-1 .menu2 #second_ul > li {
     transform-origin: top center;
   }
   header .navbar1 .container-1 #menu5 li i {
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
     margin-left: 10px;
   }
   header .navbar1 .container-1 #menu5 li i.active {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   header .navbar1 .container-1 #menu5 li #second_ul {
     position: relative;

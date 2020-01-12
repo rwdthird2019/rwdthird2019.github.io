@@ -18,25 +18,31 @@ $("#nav-icon2").click(function () {
 });
 
 $("#first_li").click(function () {
-    if (!first_li_hasclass) {
+    if (!first_li_hasclass) {    
         first_li_hasclass = true
+        $("#first_li > i").addClass('active')
         $("#first_li").addClass('open')
         $("#second_ul").animate({ height: 'toggle' }, 70);
-    }
+    } 
 });
 // ------跑出來的選單動作 end------
 $("#second_li1").click(function () {
     $("#third_ul1").animate({ height: 'toggle' }, 70);
+    $("#second_li1 > i").toggleClass('active')
 });
 $("#second_li2").click(function () {
     $("#third_ul2").animate({ height: 'toggle' }, 70);
+    $("#second_li2 > i").toggleClass('active')
 });
 $("#second_li3").click(function () {
     $("#third_ul3").animate({ height: 'toggle' }, 70);
+    $("#second_li3 > i").toggleClass('active')
 });
 $("#second_li4").click(function () {
     $("#third_ul4").animate({ height: 'toggle' }, 70);
+    $("#second_li4 > i").toggleClass('active')
 });
 $("#second_li6").click(function () {
     $("#third_ul6").animate({ height: 'toggle' }, 70);
+    $("#second_li6 > i").toggleClass('active')
 });
