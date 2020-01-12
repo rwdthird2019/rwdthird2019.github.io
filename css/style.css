@@ -465,6 +465,15 @@ header .navbar1 .container-1 .menu2 #second_ul > li {
     opacity: 0;
     transform-origin: top center;
   }
+  header .navbar1 .container-1 #menu5 li i {
+    margin-left: 10px;
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+  }
+  header .navbar1 .container-1 #menu5 li i.active {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
   header .navbar1 .container-1 #menu5 li #second_ul {
     position: relative;
     top: 4px;

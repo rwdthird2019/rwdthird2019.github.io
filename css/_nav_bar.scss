@@ -246,7 +246,13 @@ header {
             color: #fff;
             opacity: 0;
             transform-origin: top center;
-
+            i{
+              margin-left: 10px;
+              transition-duration: .3s;
+            }
+            i.active {
+              transform: rotate(180deg);
+            }
             #second_ul {
               position: relative;
               top: 4px;
@@ -258,6 +264,7 @@ header {
                 padding-left: 30px;
                 border-bottom: unset;
                 border-top: 1px solid #fff;
+               
               }
               & > li:nth-child(1) {
                 background-color: #d79426;
