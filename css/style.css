@@ -863,7 +863,6 @@ main .content .produce .products-group {
           justify-content: space-evenly;
   max-width: 1140px;
   width: 100%;
-  overflow: hidden;
   margin: 0 auto;
 }
 
@@ -910,6 +909,14 @@ main .content .produce .products-group .products-item {
   border: orange 2px solid;
   position: relative;
   overflow: hidden;
+}
+
+main .content .produce .products-group .products-item:hover {
+  z-index: 99999;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 @media (max-width: 576px) {

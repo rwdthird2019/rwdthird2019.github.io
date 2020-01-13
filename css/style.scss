@@ -182,7 +182,7 @@ main {
         justify-content: space-evenly;
         max-width: 1140px;
         width: 100%;
-        overflow: hidden;
+        // overflow: hidden;
         @include margin-auto();
         @media (max-width: 768px) {
           flex-wrap: wrap;
@@ -219,6 +219,11 @@ main {
           border: orange 2px solid;
           position: relative;
           overflow: hidden;
+          &:hover{
+            z-index: 99999;
+            transition-duration: .3s;
+            transform: scale(1.2);
+          }
           @media (max-width: 576px) {
             &:nth-child(odd) {
               margin-right: 0px;
