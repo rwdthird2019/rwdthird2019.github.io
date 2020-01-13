@@ -727,6 +727,10 @@ body {
   display: flex;
 }
 
+.news .container-1 .item_group .item:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .news .container-1 .item_group .item {
     width: 80%;
