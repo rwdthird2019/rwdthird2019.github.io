@@ -582,10 +582,11 @@ function chagne_menu(num) {
                                 ${element.Products_escription}
                             </span>
                             <span class="price">ＮＴ.${element.Products_price}</span>
-                            <span class="btn">加入購物車</span>
+                            <span class="btn" onclick="window.open('http://www.honeyhome.com.tw/m/p2.html');">加入購物車</span>
                         </div>
                     </div>`;
             }
+            
         } else {
             for (var i = 0; i < remainder; i++) {
                 const element = shop_menu[num].Products_inf[max_Products_count * page + i];
@@ -602,7 +603,7 @@ function chagne_menu(num) {
                                 ${element.Products_escription}
                             </span>
                             <span class="price">ＮＴ.${element.Products_price}</span>
-                            <span class="btn">加入購物車</span>
+                            <span class="btn" onclick="window.open('http://www.honeyhome.com.tw/m/p2.html');">加入購物車</span>
                         </div>
                     </div>`;
             }
@@ -625,7 +626,7 @@ function chagne_menu(num) {
                                 ${element.Products_escription}
                             </span>
                             <span class="price">ＮＴ.${element.Products_price}</span>
-                            <span class="btn">加入購物車</span>
+                            <span class="btn" onclick="window.open('http://www.honeyhome.com.tw/m/p2.html');">加入購物車</span>
                         </div>
                     </div>`;
         }
