@@ -46,14 +46,14 @@ function load() {
     count++
 }
 
+  load()
 
+// if (sessionStorage.getItem("hasrun") == null) {
+//     load()
+//     sessionStorage.setItem("hasrun", "跑過了");
 
-if (sessionStorage.getItem("hasrun") == null) {
-    load()
-    sessionStorage.setItem("hasrun", "跑過了");
-
-} else {
-    $('#homepage').css('opacity', '1')
-    $('#main').css('opacity', '1')
-    setTimeout(() => { $('#loadpages').css('display', 'none') }, 200)
-}
+// } else {
+//     $('#homepage').css('opacity', '1')
+//     $('#main').css('opacity', '1')
+//     setTimeout(() => { $('#loadpages').css('display', 'none') }, 200)
+// }
