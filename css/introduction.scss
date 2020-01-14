@@ -178,6 +178,7 @@ main {
         display: flex;
         justify-content: center;
         margin: 0 auto;
+        flex-wrap: wrap;
         @media (max-width: 1200px) {
           width: 60%;
         }
@@ -189,10 +190,17 @@ main {
         @media (max-width: 576px) {
           width: 90%;
           padding-bottom: 100px;
+        
         }
 
         img {
-          width: 100%;
+          width: 30%;
+          @media (max-width: 576px) {
+            width: 50%;
+          }
+          @media (max-width: 360px) {
+            width: 80%;
+          }
         }
       }
     }

@@ -645,6 +645,54 @@ header .navbar1 .container-1 .menu2 #second_ul > li {
     -webkit-animation-delay: 2.1s;
             animation-delay: 2.1s;
   }
+}
+
+@media (max-width: 768px) and (max-width: 768px) {
+  header .navbar1 .container-1 #menu5.active li:first-of-type {
+    -webkit-animation: menu5 0.2s ease-in-out forwards;
+            animation: menu5 0.2s ease-in-out forwards;
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s;
+  }
+  header .navbar1 .container-1 #menu5.active li:nth-of-type(2) {
+    -webkit-animation: menu5 0.2s ease-in-out forwards;
+            animation: menu5 0.2s ease-in-out forwards;
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+  }
+  header .navbar1 .container-1 #menu5.active li:nth-of-type(3) {
+    -webkit-animation: menu5 0.2s ease-in-out forwards;
+            animation: menu5 0.2s ease-in-out forwards;
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+  }
+  header .navbar1 .container-1 #menu5.active li:nth-of-type(4) {
+    -webkit-animation: menu5 0.2s ease-in-out forwards;
+            animation: menu5 0.2s ease-in-out forwards;
+    -webkit-animation-delay: 0.8s;
+            animation-delay: 0.8s;
+  }
+  header .navbar1 .container-1 #menu5.active li:nth-of-type(5) {
+    -webkit-animation: menu5 0.2s ease-in-out forwards;
+            animation: menu5 0.2s ease-in-out forwards;
+    -webkit-animation-delay: 1.0s;
+            animation-delay: 1.0s;
+  }
+  header .navbar1 .container-1 #menu5.active li:nth-of-type(6) {
+    -webkit-animation: menu5 0.2s ease-in-out forwards;
+            animation: menu5 0.2s ease-in-out forwards;
+    -webkit-animation-delay: 1.2s;
+            animation-delay: 1.2s;
+  }
+  header .navbar1 .container-1 #menu5.active li:nth-of-type(7) {
+    -webkit-animation: menu5 0.2s ease-in-out forwards;
+            animation: menu5 0.2s ease-in-out forwards;
+    -webkit-animation-delay: 1.4s;
+            animation-delay: 1.4s;
+  }
+}
+
+@media (max-width: 768px) {
   @-webkit-keyframes menu5 {
     0% {
       opacity: 0;
@@ -957,6 +1005,8 @@ main .content .platform .platform-pic {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media (max-width: 1200px) {
@@ -979,6 +1029,18 @@ main .content .platform .platform-pic {
 }
 
 main .content .platform .platform-pic img {
-  width: 100%;
+  width: 30%;
+}
+
+@media (max-width: 576px) {
+  main .content .platform .platform-pic img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 360px) {
+  main .content .platform .platform-pic img {
+    width: 80%;
+  }
 }
 /*# sourceMappingURL=introduction.css.map */

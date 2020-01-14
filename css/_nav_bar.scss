@@ -330,6 +330,42 @@ header {
             animation: menu5 0.3s ease-in-out forwards;
             animation-delay: 2.1s;
           }
+          @media (max-width:768px){
+            &.active li:first-of-type {
+              animation: menu5 0.2s ease-in-out forwards;
+              animation-delay: 0.1s;
+            }
+  
+            &.active li:nth-of-type(2) {
+              animation: menu5 0.2s ease-in-out forwards;
+              animation-delay: 0.4s;
+            }
+  
+            &.active li:nth-of-type(3) {
+              animation: menu5 0.2s ease-in-out forwards;
+              animation-delay: 0.6s;
+            }
+  
+            &.active li:nth-of-type(4) {
+              animation: menu5 0.2s ease-in-out forwards;
+              animation-delay: 0.8s;
+            }
+  
+            &.active li:nth-of-type(5) {
+              animation: menu5 0.2s ease-in-out forwards;
+              animation-delay: 1.0s;
+            }
+  
+            &.active li:nth-of-type(6) {
+              animation: menu5 0.2s ease-in-out forwards;
+              animation-delay: 1.2s;
+            }
+  
+            &.active li:nth-of-type(7) {
+              animation: menu5 0.2s ease-in-out forwards;
+              animation-delay: 1.4s;
+            }
+          }
           @keyframes menu5 {
             0% {
               opacity: 0;

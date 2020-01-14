@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./css/scene.css">
     <link rel="stylesheet" href="./css/public.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.css">
+
 </head>
 
 <body>
@@ -82,7 +84,7 @@
                                 </ul>
                             </li>
                             <li class="second_li" id="second_li5" onclick="document.location.href='buy.html?li_num=99'">
-                                蜂膠 
+                                蜂膠
                             </li>
                             <li class="second_li" id="second_li6">
                                 蜂蜜禮盒 <i class="fa fa-angle-up"></i>
@@ -91,7 +93,8 @@
                                     <li onclick="document.location.href='buy.html?li_num=10'">甜蜜伴手禮</li>
                                 </ul>
                             </li>
-                            <li class="second_li" id="second_li7" onclick="window.open('http://www.honeyhome.com.tw/pic/topics.aspx?id=151');">
+                            <li class="second_li" id="second_li7"
+                                onclick="window.open('http://www.honeyhome.com.tw/pic/topics.aspx?id=151');">
                                 團購單填寫
                             </li>
                         </ul>
@@ -113,26 +116,39 @@
                 <div class="scene-group">
                     <div class="scene_item">
                         <div>
-                            <img src="./img/scene/1.png" alt="">
+                            <a href="./img/scene/1.png" data-lightbox="image-1" >
+                                <img src="./img/scene/1.png" alt="" >
+                            </a>
+
                         </div>
                         <div>
-                            <img src="./img/scene/2.png" alt="">
-                        </div>
-                    </div>
-                    <div class="scene_item">
-                        <div>
-                            <img src="./img/scene/3.png" alt="">
-                        </div>
-                        <div>
-                            <img src="./img/scene/4.png" alt="">
+                            <a href="./img/scene/2.png" data-lightbox="image-1" >
+                                <img src="./img/scene/2.png" alt="" >
+                            </a>
                         </div>
                     </div>
                     <div class="scene_item">
                         <div>
-                            <img src="./img/scene/5.png" alt="">
+                            <a href="./img/scene/3.png" data-lightbox="image-1" >
+                                <img src="./img/scene/3.png" alt="">
+                            </a>
                         </div>
                         <div>
-                            <img src="./img/scene/6.png" alt="">
+                            <a href="./img/scene/4.png" data-lightbox="image-1" >
+                                <img src="./img/scene/4.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="scene_item">
+                        <div>
+                            <a href="./img/scene/5.png" data-lightbox="image-1" >
+                                <img src="./img/scene/5.png" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="./img/scene/6.png" data-lightbox="image-1" >
+                                <img src="./img/scene/6.png" alt="" >
+                            </a>
                         </div>
                     </div>
 
@@ -197,8 +213,9 @@
 
 
 
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.js"></script>
     <script src="./jquery/navbar_menu.js"></script>
     <script src="./jquery/public.js"></script>
     <script>
